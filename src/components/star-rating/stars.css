@@ -1,0 +1,19 @@
+.active{
+    color: yellow;
+}
+
+.inactive{
+    color:black
+}
+
+.bsdk{
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.stars-rating{
+    display: flex;
+    
+    justify-content: center;
+    align-items:s;
+}

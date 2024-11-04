@@ -1,0 +1,83 @@
+/* Wrapper styling */
+.wrapper {
+    max-width: 700px;
+    margin: 50px auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion container */
+.accordion {
+    border: none; /* Remove border for a cleaner look */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Individual accordion items */
+.item {
+    background-color: #ffffff; /* White background for items */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Elevate item on hover */
+.item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Accordion title styling */
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #e7f3ff; /* Light blue background for titles */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on title */
+.title:hover {
+    background-color: #d0e4ff; /* Slightly darker blue on hover */
+}
+
+/* Title heading */
+.title h3 {
+    margin: 0;
+    color: #2c3e50; /* Darker text color for better readability */
+}
+
+/* Plus icon */
+.title span {
+    font-size: 24px;
+    color: #7f8c8d; /* Neutral icon color */
+    transition: transform 0.3s;
+}
+
+/* Rotate the plus icon when content is open */
+.title span.rotate {
+    transform: rotate(45deg);
+}
+
+/* Content section */
+.content {
+    padding: 15px;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #34495e; /* Darker text color for content */
+    background-color: whitesmoke; /* Light grey background for content */
+    border-radius: 0 0 5px 5px; /* Rounded corners at the bottom */
+}
+
+/* Show the content with smooth transition */
+.content.show {
+    padding: 20px; /* Add padding when content is shown */
+    max-height: 500px; /* Adjust according to content height */
+}
